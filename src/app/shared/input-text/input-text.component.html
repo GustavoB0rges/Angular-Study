@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <input
+    #input
+    type="text"
+    [formControlName]="controlName"
+    [placeholder]="placeholder"
+    (change)="onInputChange(input.value)"
+  />
+</form>
