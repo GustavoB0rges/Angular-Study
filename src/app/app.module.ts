@@ -10,10 +10,11 @@ import {
   DirectivesComponent,
   HighlightDirective,
 } from './Directives/directives/directives.component';
+import { InputTextComponent } from './shared/input-text/input-text.component';
 
 @NgModule({
   declarations: [AppComponent, DirectivesComponent, HighlightDirective],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, InputTextComponent],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })

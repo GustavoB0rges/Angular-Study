@@ -1,1 +1,15 @@
 <p myHighlight>Highlight me!</p>
+<app-input-text
+  [form]="form"
+  [controlName]="'teste'"
+  [placeholder]="'Digite aqui'"
+  (valueChange)="form.get('teste').setValue($event)"
+></app-input-text>
+<app-input-text
+  [form]="form"
+  [controlName]="'teste2'"
+  [placeholder]="'Digite aqui'"
+  (valueChange)="form.get('teste2').setValue($event)"
+></app-input-text>
+
+<button (click)="onSave()">salvar</button>
